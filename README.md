@@ -1,7 +1,5 @@
 # jmeter-backend-newrelic
 
-[![CI](https://github.com/darrensmithwtc/jmeter-backend-newrelic/actions/workflows/maven.yml/badge.svg)](https://github.com/darrensmithwtc/jmeter-backend-newrelic/actions/workflows/maven.yml)
-
 A JMeter plug-in that enables you to send test results to New Relic Metrics API.
 
 ## Overview
@@ -32,7 +30,7 @@ The following test results metrics are exposed by the plugin.
 
 ### Plugin installation
 
-Once you have built or downloaded the plugin JAR file from the [releases](https://github.com/darrensmithwtc/jmeter-backend-newrelic/releases) section,
+Once you have built or downloaded the plugin JAR file from target directory
 move the JAR to your `$JMETER_HOME/lib/ext`.
 
 ```bash
@@ -44,7 +42,7 @@ Then, restart JMeter and the plugin should be loaded.
 ### JMeter configuration
 
 To make JMeter send test result metrics to New Relic, in your **Test Pane**, right click on
-**Thread Group** > Add > Listener > Backend Listener, and choose `io.github.darrensmithwtc.jmeter.backendlistener.newrelic.NewRelicBackendClient` as `Backend Listener Implementation`.
+**Thread Group** > Add > Listener > Backend Listener, and choose `com.sumanth.jmeter.backendlistener.newrelic.NewRelicBackendClient` as `Backend Listener Implementation`.
 Then, in the Parameters table, configure the following attributes.
 
 | Attribute                | Description                                                                                                                                                                                                           | Required | Default                                      |
@@ -71,10 +69,6 @@ You can add custom data to your metrics by adding properties starting with `ai.`
 
 Test result metrics are available in the **requests** dimension of your New Relic instance.
 
-## Contributing
-
-Feel free to contribute by forking and making pull requests, or simply by suggesting ideas through the
-[Issues](https://github.com/darrensmithwtc/jmeter-backend-newrelic/issues) section.
 
 ### Build
 
@@ -87,4 +81,4 @@ mvn clean package
 
 ---
 
-This plugin is inspired by the [Azure](https://github.com/adrianmo/jmeter-backend-azure) plugin, as well as [Elasticsearch](https://github.com/delirius325/jmeter-elasticsearch-backend-listener) and [Kafka](https://github.com/rahulsinghai/jmeter-backend-listener-kafka) backend listener plugins.
+This plugin is inspired by the [JMeter](https://github.com/darrensmithwtc/jmeter-backend-newrelic), [Azure](https://github.com/adrianmo/jmeter-backend-azure) plugin, as well as [Elasticsearch](https://github.com/delirius325/jmeter-elasticsearch-backend-listener) and [Kafka](https://github.com/rahulsinghai/jmeter-backend-listener-kafka) backend listener plugins.
