@@ -15,7 +15,7 @@
         <org.apache.jmeter.version>5.6.3</org.apache.jmeter.version>
         <junit.version>4.13.2</junit.version>
         <junit.jupiter.version>5.7.2</junit.jupiter.version>
-        <junit.platform.version>1.7.2</junit.platform.version>
+        <junit.platform.version>1.14.2</junit.platform.version>
         <com.newrelic.telemetry.version>0.16.0</com.newrelic.telemetry.version>
         <org.slf4j.version>2.0.12</org.slf4j.version>
     </properties>
